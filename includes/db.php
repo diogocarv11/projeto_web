@@ -1,8 +1,8 @@
 <?php
-$host = "";
-$dbname = "";
-$username = "";
-$password = "";
+$host = "localhost";
+$dbname = "agenda_eventos";
+$username = "utilizador";
+$password = "root";
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
