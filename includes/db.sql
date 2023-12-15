@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS participante (
     user_id INT,
     evento_id INT,
     FOREIGN KEY (user_id) REFERENCES user(id),
-    FOREIGN KEY (evento_id) REFERENCES evento(id)
+    FOREIGN KEY (evento_id) REFERENCES eventos(id)
 );
 
 -- Tabela de Comentários
@@ -37,5 +37,5 @@ CREATE TABLE IF NOT EXISTS comentario (
     comentario TEXT,
     data_comentario DATETIME,
     FOREIGN KEY (user_id) REFERENCES user(id),
-    FOREIGN KEY (evento_id) REFERENCES evento(id)
+    FOREIGN KEY (evento_id) REFERENCES eventos(id)
 );
