@@ -31,4 +31,14 @@ class EventController
         }
         return $comentarios;
     }
+
+    public function adicionarEvento($pdo, $nome, $data, $horario, $local, $descricao)
+    {
+        $eventModel = new EventModel($pdo);
+        $eventModel->inserirEvento($nome, $data, $horario, $local, $descricao);
+
+        // Redirecionar para a página de eventos após add bem sucedida
+        header('Location: index.php');
+        exit();
+    }
 }
