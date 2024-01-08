@@ -1,1 +1,27 @@
 
+/* styles.css */
+
+.event-card {
+    display: inline-block;
+    margin: 10px; 
+    width: 300px; 
+    border: 1px solid #ddd; 
+    padding: 10px; 
+}
+.event-card h2 {
+    margin-bottom: 5px;
+}
+
+.event-card p {
+    margin: 5px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
