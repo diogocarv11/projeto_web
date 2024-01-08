@@ -10,7 +10,7 @@
 <body>
     <h1>Adicionar Evento</h1>
 
-    <form method="post" action="processar_adicao_evento.php">
+    <form method="post" action="processar_add_evento.php">
         <label for="nome">Nome:</label>
         <input type="text" name="nome" required>
 
