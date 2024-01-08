@@ -15,6 +15,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $eventController->adicionarEvento($pdo, $nome, $data, $horario, $local, $descricao);
 } else {
     // Redirecionar para a página de eventos se não for uma solicitação POST
-    header('Location: index.php');
+    header('Location: /projeto_web/index.php');
     exit();
 }
