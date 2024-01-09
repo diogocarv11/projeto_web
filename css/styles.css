@@ -25,3 +25,21 @@ ul {
 li {
     margin-bottom: 10px;
 }
+
+.imglogin {
+    text-align: center;
+}
+
+.cardLogin {
+    margin: 0 auto;
+    float: none;
+    margin-top: 15%;
+    margin-bottom: 10px;
+    width: 350px;
+}
+
+.cardLogin-body {
+    padding: 10%;
+    background-color: #b4d8ff;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
