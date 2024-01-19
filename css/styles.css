@@ -1,13 +1,23 @@
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
-/* styles.css */
+.container {
+    max-width: 600px;
+    width: 100%;
+}
 
 .event-card {
-    display: inline-block;
-    margin: 10px; 
-    width: 300px; 
-    border: 1px solid #ddd; 
-    padding: 10px; 
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .12);
 }
+
 .event-card h2 {
     margin-bottom: 5px;
 }
@@ -31,15 +41,21 @@ li {
 }
 
 .cardLogin {
-    margin: 0 auto;
+    margin: 10% auto 10% auto;
     float: none;
-    margin-top: 15%;
-    margin-bottom: 10px;
-    width: 350px;
+    width: 400px;
 }
 
 .cardLogin-body {
     padding: 10%;
     background-color: #b4d8ff;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.text-right {
+    margin-top: 15px;
+}
+
+.col-md-6 {
+    margin-top: 15px;
 }
