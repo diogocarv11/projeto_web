@@ -5,3 +5,7 @@ session_start();
 
 $eventController = new EventController();
 $eventController->listarEventos($pdo);
+
+?>
+
+
