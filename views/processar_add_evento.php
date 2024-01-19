@@ -10,11 +10,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $horario = $_POST['horario'];
     $local = $_POST['local'];
     $descricao = $_POST['descricao'];
+    $lotacao = isset($_POST['lotacao']) ? $_POST['lotacao'] : 0;
+
+    // verifica se $lotacao é um número válido
+    $lotacao = is_numeric($lotacao) ? intval($lotacao) : 0;
 
     $eventController = new EventController();
-    $eventController->adicionarEvento($pdo, $nome, $data, $horario, $local, $descricao);
+    $eventController->adicionarEvento($pdo, $nome, $data, $horario, $local, $descricao, $lotacao);
 } else {
-    // Redirecionar para a página de eventos se não for uma solicitação POST
-    header('Location: /projeto_web/index.php');
+    // redireciona para a página de eventos
+    header('Location: ../index.php');
     exit();
 }
+?>
